@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <!--En la siguiente línea voy por el estilo CSS que ofrece Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <!--estilo CSS al que puede conmplementar o contradecir-->
+        <style>
+            section {
+                scroll-margin-top: 50px;
+            }
+            nav {
+                backdrop-filter: blur(0.5rem);
+            }
+            #foto {
+                background: transparent url("https://picsum.photos/id/53/800/600?blur=8") 0 0 no-repeat;
+                background-size: cover;
+            }
+            footer{
+                background: #4988BF;
+            }
+        </style>
+        <title>Javiera Bofarull</title>
+    </head>
+    <body>
+        <!--Barra de navegación fija al tope-->
+        <nav class="navbar fixed-top navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Javiera Bofarull</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#lasEspecialidades">Especialidades</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#losTrabajos">Trabajos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#lasOpiniones">Opiniones</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#losContactos">Contactos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Encabezado-->        
+        <header class="vh-100" id="foto">
+            <div class="position-absolute top-50 start-50 translate-middle w-50">
+                <p class="fs-4">
+                    Estudiante de Diseño  Integral en la Pontificia Universidad Católica De Chile.En la práctica, he trabajado en proyectos de  <a href="#lasEspecialidades" class="link-dark">diseño editorial, experimental y branding </a>.
+                </p>
+            </div>
+        </header>
+        <!--Los símbolos en este SVG escondido serán reutilizados más abajo-->
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+            <symbol id="caset" viewBox="0 0 16 16">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-image" viewBox="0 0 16 16">
+  <path d="M6.502 7a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+  <path d="M14 14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5V14zM4 1a1 1 0 0 0-1 1v10l2.224-2.224a.5.5 0 0 1 .61-.075L8 11l2.157-3.02a.5.5 0 0 1 .76-.063L13 10V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4z"/>
+            </symbol>
+                 <symbol id="barita" viewBox="0 0 16 16">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-image" viewBox="0 0 16 16">
+ <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-magic" viewBox="0 0 16 16">
+  <path d="M9.5 2.672a.5.5 0 1 0 1 0V.843a.5.5 0 0 0-1 0v1.829Zm4.5.035A.5.5 0 0 0 13.293 2L12 3.293a.5.5 0 1 0 .707.707L14 2.707ZM7.293 4A.5.5 0 1 0 8 3.293L6.707 2A.5.5 0 0 0 6 2.707L7.293 4Zm-.621 2.5a.5.5 0 1 0 0-1H4.843a.5.5 0 1 0 0 1h1.829Zm8.485 0a.5.5 0 1 0 0-1h-1.829a.5.5 0 0 0 0 1h1.829ZM13.293 10A.5.5 0 1 0 14 9.293L12.707 8a.5.5 0 1 0-.707.707L13.293 10ZM9.5 11.157a.5.5 0 0 0 1 0V9.328a.5.5 0 0 0-1 0v1.829Zm1.854-5.097a.5.5 0 0 0 0-.706l-.708-.708a.5.5 0 0 0-.707 0L8.646 5.94a.5.5 0 0 0 0 .707l.708.708a.5.5 0 0 0 .707 0l1.293-1.293Zm-3 3a.5.5 0 0 0 0-.706l-.708-.708a.5.5 0 0 0-.707 0L.646 13.94a.5.5 0 0 0 0 .707l.708.708a.5.5 0 0 0 .707 0L8.354 9.06Z"/>
+</svg>
+            </symbol>
+                      <symbol id="b" viewBox="0 0 16 16">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-image" viewBox="0 0 16 16">
+ <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bootstrap-fill" viewBox="0 0 16 16">
+  <path d="M6.375 7.125V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375v2.725z"/>
+  <path d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4h-8zm1.06 12V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396H5.062z"/>
+</svg>
+            </symbol>
+        </svg>
+        <!--Sección de #lasEspecialidades-->        
+        <section class="bg-light" id="lasEspecialidades">
+            <div class="container py-5">
+                <div class="row gx-5">
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h2 class="h4 fw-bolder">
+                            <svg class="me-1 mb-1" width="1em" height="1em" fill="#FF69B4"><use href="#caset"></use></svg> editorial
+                        </h2>
+                        <p>Maquetación y composición de todo tipo de publicaciones, ya sea libros, publicaciones de Instagram u otros.</p>
+                        <small>#Hashtag</small>
+                    </div>
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h2 class="h4 fw-bolder">
+                            <svg class="me-1 mb-1" width="1em" height="1em" fill="#FF69B4"><use href="#barita"></use></svg> experimental
+                        </h2>
+                        <p>Diseño de productos o servicios desde la prueba y error.</p>
+                        <small>#Hashtag</small>
+                    </div>
+                    <div class="col-lg-4">
+                        <h2 class="h4 fw-bolder">
+                            <svg class="me-1 mb-1" width="1em" height="1em" fill="#FF69B4"><use href="#b"></use></svg> branding
+                        </h2>
+                        <p>Imagen de marca.</p>
+                        <small>#Hashtag</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Sección de #losTrabajos-->        
+        <section class="border-top border-bottom" id="losTrabajos">
+            <div class="container py-5">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4" id="trabajos"></div>
+            </div>
+        </section>
+        <!--Sección de #lasOpiniones-->        
+        <section class="bg-light" id="lasOpiniones">
+            <div class="container py-5">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bolder">Opiniones</h2>
+                    <p class="lead mb-0">Algunos clientes felices</p>
+                </div>
+                <div class="row">
+                    <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 mx-auto">
+                        <!-- Primer comentario-->
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-body p-4">
+                                <p class="mb-1">😁 Muy satisfecho con su trabajo.</p>
+                                <div class="small text-muted text-end">— Pedro Perez</div>
+                            </div>
+                        </div>
+                        <!-- Segundo comentario-->
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-body p-4">
+                                <p class="mb-1">🤯 Increíbles ideas y servicio.</p>
+                                <div class="small text-muted text-end">— Marta Martinez</div>
+                            </div>
+                        </div>
+                        <!-- Tercer comentario-->
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-body p-4">
+                                <p class="mb-1">😌 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id ipsum at est venenatis vulputate et eu nibh. Curabitur quis orci in tellus tempus semper.</p>
+                                <div class="small text-muted text-end">— Nombre de quien lo dice</div>
+                            </div>
+                        </div>
+                        <!-- Listo, no más comentarios-->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Sección de #losContactos-->        
+        <section class="border-top border-bottom" id="losContactos">
+            <div class="container py-5">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bolder">Contactos</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body text-center">                        
+                                <h3 class="m-0 fs-5"><span class="fs-1">📍</span><br/>Dirección</h4>
+                                <div class="small text-black-50">4923 Market Street, Orlando FL</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body text-center">
+                                <h3 class="m-0 fs-5"><span class="fs-1">📧</span><br/>Email</h4>
+                                <div class="small text-black-50"><a href="#!">jbofarull@uc.cl.com</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body text-center">
+                                <h3 class="m-0 fs-5"><span class="fs-1">⌛</span><br/>Trayectoria</h4>
+                                <div class="small text-black-50"><a href="" data-bs-toggle="modal" data-bs-target="#exampleModal" class="text-decoration-none">abrir modal</a></div>
+                                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Nombre Apellido</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        
+                          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Nombre Apellido</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Diseño y nuevo medios lorem ipsum dolor sit amet, consectetur adipiscing elit. In id ipsum at est venenatis vulputate et eu nibh. Curabitur quis orci in tellus tempus semper. En 8 clases he publicado 8 trabajos
+                            con GitHub Pages.
+                        </p>
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td><a href="https://jbofarull.github.io/Clase-1/" target="_blank">HTML5 + CSS3 + p5.js</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td><a href="https://jbofarull.github.io/Clase-2/" target="_blank">HTML5 + CSS3 + p5.js</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td><a href="https://jbofarull.github.io/clase-03/" target="_blank">HTML5 + CSS3 + p5.js</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td><a href="https://jbofarull.github.io/clase-4/" target="_blank">Evaluación Nº1</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td><a href="#" target="_blank">HTML5 + CSS3 + otras bibliotecas de JS</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td><a href="#" target="_blank">HTML5 + CSS3 + otras bibliotecas de JS</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td><a href="https://jbofarull.github.io/clase-7" target="_blank">HTML5 + CSS3 + otras bibliotecas de JS</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td><a href="https://jbofarull.github.io/clase-8/index.html" target="_blank">Evaluación Nº2</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- El pie de página-->
+        <footer class="py-4 text-white">
+            <div class="container px-5"><p class="text-center small">Javiera Bofarull &copy; 2023</p></div>
+        </footer>
+        <!-- Lo que sigue es JavaScript a secas-->
+        <script>
+            async function portfolio() {
+                const consulta = await fetch("https://raw.githubusercontent.com/Jbofarull/clase-7/main/datos.json");
+                const data = await consulta.json();
+                var donde = document.querySelector("#trabajos");
+                data.forEach(function (t, i) {
+                    donde.innerHTML +=
+                        '<article class="col"><div class="card h-100 shadow-sm ' +
+                        t.soporte +
+                        '"><img src="' +
+                        t.fotos[0] +
+                        '" class="card-img-top"><div class="card-body"><h3 class="fs-5"><a href="single.html?nro=' +
+                        i +
+                        '" class="link-secondary">' +
+                        t.nombre +
+                        "</a></h3><p>" +
+                        t.abstract +
+                        "</p><small>#" +
+                        t.soporte +
+                        "</small></div></div></article>";
+                });
+            }
+            portfolio().catch((error) => console.error(error));
+        </script>
+        <!-- Lo que sigue es la biblioteca de Bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+                     
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+                     
+    </body>
+</html>
